@@ -8,18 +8,32 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
     //MARK: Properties
+    
     @IBOutlet weak var searchTextField: UITextField!
     @IBOutlet weak var searchLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        // Handle the text field’s user input through delegate callbacks.
+        searchTextField.delegate = self
 
     }
 
+    //MARK: UITextFieldDelegate
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        searchLabel.text = searchTextField.text
+    }
+    
     //MARK: Actions
     
     @IBAction func setDefatultLabelText(_ sender: UIButton) {
