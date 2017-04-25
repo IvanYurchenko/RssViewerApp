@@ -10,11 +10,20 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    //MARK: Properties
+    @IBOutlet weak var searchTextField: UITextField!
+    @IBOutlet weak var searchLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+
     }
 
-
+    //MARK: Actions
+    
+    @IBAction func setDefatultLabelText(_ sender: UIButton) {
+        searchLabel.text = "Enter search keyword:"
+    }
 }
 

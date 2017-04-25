@@ -40,6 +40,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FFb-Wt-ULV">
                                         <rect key="frame" x="0.0" y="66.5" width="141" height="30"/>
                                         <state key="normal" title="Set default label text"/>
+                                        <connections>
+                                            <action selector="setDefatultLabelText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gzx-gO-XqM"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -55,6 +58,10 @@
                             <constraint firstItem="kc2-Oz-zhi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="zHz-sl-X2Q"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="searchLabel" destination="KbE-tf-XPE" id="Rsh-AR-prW"/>
+                        <outlet property="searchTextField" destination="oLc-RO-K0V" id="O1e-rI-IMq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
