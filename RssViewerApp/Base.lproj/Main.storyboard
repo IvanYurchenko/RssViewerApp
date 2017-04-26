@@ -47,9 +47,13 @@
                                     </button>
                                     <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="FuI-7Z-yLw">
                                         <rect key="frame" x="0.0" y="104.5" width="320" height="320"/>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="FuI-7Z-yLw" secondAttribute="height" multiplier="1:1" id="4b2-Gf-BuF"/>
                                         </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="cTQ-E6-yQq" appends="YES" id="OFX-OR-sh7"/>
+                                        </connections>
                                     </imageView>
                                 </subviews>
                                 <constraints>
@@ -66,11 +70,17 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="photoImageView" destination="FuI-7Z-yLw" id="HYq-ls-kFy"/>
                         <outlet property="searchLabel" destination="KbE-tf-XPE" id="Rsh-AR-prW"/>
                         <outlet property="searchTextField" destination="oLc-RO-K0V" id="O1e-rI-IMq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="cTQ-E6-yQq">
+                    <connections>
+                        <action selector="selectImageFromPhotoLibrary:" destination="BYZ-38-t0r" id="Zp2-77-pGm"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="108.39580209895054"/>
         </scene>
