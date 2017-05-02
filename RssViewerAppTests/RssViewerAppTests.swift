@@ -33,4 +33,18 @@ class RssViewerAppTests: XCTestCase {
         }
     }
     
+    //MARK: Meal Class tests
+    
+    // Confirm that the Meal initializer returns a Meal object when passed valid parameters.
+    func testMealInitializationSucceeds() {
+        let meal = Meal(name: "Meal", photo: nil)
+        XCTAssertNotNil(meal)
+    }
+    
+    // Confirm that the Meal initialier returns nil when passed a negative rating or an empty name.
+    func testMealInitializationFails() {
+        // Empty String
+        let emptyStringMeal = Meal(name: "", photo: nil)
+        XCTAssertNil(emptyStringMeal)
+    }
 }
