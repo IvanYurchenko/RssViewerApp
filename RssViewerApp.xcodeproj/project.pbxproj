@@ -14,6 +14,8 @@
 		870E11D81EA8D3030094823E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 870E11D61EA8D3030094823E /* LaunchScreen.storyboard */; };
 		870E11E31EA8D3030094823E /* RssViewerAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870E11E21EA8D3030094823E /* RssViewerAppTests.swift */; };
 		879CA8101EB3A70B0040574E /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879CA80F1EB3A70B0040574E /* MealTableViewCell.swift */; };
+		879CA8121EB3AB5A0040574E /* MealTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879CA8111EB3AB5A0040574E /* MealTableViewController.swift */; };
+		879CA8141EB3AB860040574E /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879CA8131EB3AB860040574E /* Meal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		870E11E21EA8D3030094823E /* RssViewerAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RssViewerAppTests.swift; sourceTree = "<group>"; };
 		870E11E41EA8D3030094823E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		879CA80F1EB3A70B0040574E /* MealTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealTableViewCell.swift; sourceTree = "<group>"; };
+		879CA8111EB3AB5A0040574E /* MealTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealTableViewController.swift; sourceTree = "<group>"; };
+		879CA8131EB3AB860040574E /* Meal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,11 +85,13 @@
 			children = (
 				870E11CD1EA8D3030094823E /* AppDelegate.swift */,
 				870E11CF1EA8D3030094823E /* ViewController.swift */,
+				879CA80F1EB3A70B0040574E /* MealTableViewCell.swift */,
+				879CA8111EB3AB5A0040574E /* MealTableViewController.swift */,
+				879CA8131EB3AB860040574E /* Meal.swift */,
 				870E11D11EA8D3030094823E /* Main.storyboard */,
 				870E11D41EA8D3030094823E /* Assets.xcassets */,
 				870E11D61EA8D3030094823E /* LaunchScreen.storyboard */,
 				870E11D91EA8D3030094823E /* Info.plist */,
-				879CA80F1EB3A70B0040574E /* MealTableViewCell.swift */,
 			);
 			path = RssViewerApp;
 			sourceTree = "<group>";
@@ -204,8 +210,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				879CA8141EB3AB860040574E /* Meal.swift in Sources */,
 				870E11D01EA8D3030094823E /* ViewController.swift in Sources */,
 				870E11CE1EA8D3030094823E /* AppDelegate.swift in Sources */,
+				879CA8121EB3AB5A0040574E /* MealTableViewController.swift in Sources */,
 				879CA8101EB3A70B0040574E /* MealTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

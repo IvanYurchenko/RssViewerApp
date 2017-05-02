@@ -40,6 +40,10 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="nameLabel" destination="DaU-Ck-5FY" id="Vg8-4g-yWF"/>
+                                    <outlet property="photoImageView" destination="atb-it-O1J" id="kMW-Ql-oJq"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -127,6 +131,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="defaultPhoto" width="150" height="150"/>
+        <image name="defaultPhoto" width="125" height="124"/>
     </resources>
 </document>
