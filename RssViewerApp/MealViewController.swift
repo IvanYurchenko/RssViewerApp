@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MealViewController.swift
 //  RssViewerApp
 //
 //  Created by Ivan Yurchenko on 4/20/17.
@@ -8,12 +8,11 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     //MARK: Properties
     
     @IBOutlet weak var searchTextField: UITextField!
-    @IBOutlet weak var searchLabel: UILabel!
     @IBOutlet weak var photoImageView: UIImageView!
     
     override func viewDidLoad() {
@@ -32,7 +31,6 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
-        searchLabel.text = searchTextField.text
     }
     
     //MARK: UIImagePickerControllerDelegate
@@ -71,10 +69,6 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
         imagePickerController.delegate = self
         
         present(imagePickerController, animated: true, completion: nil)
-    }
-    
-    @IBAction func setDefatultLabelText(_ sender: UIButton) {
-        searchLabel.text = "Enter search keyword:"
     }
 }
 
